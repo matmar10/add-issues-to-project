@@ -3,8 +3,8 @@
 name: Action self-test
 
 on:
-  pull_request:
-    branches: [ '*' ]
+  issues:
+    types: [ opened, edited, closed, reopened, assigned ]
 
 jobs:
   test-action:
