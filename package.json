@@ -1,0 +1,48 @@
+{
+  "name": "add-issues-to-project",
+  "version": "0.0.1",
+  "description": "Github action to automatically add all issues to the specified project board.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js",
+    "release": "release-it --ci",
+    "prerelease": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmar10/add-issues-to-project.git"
+  },
+  "keywords": [
+    "Github",
+    "action",
+    "project",
+    "ci",
+    "cd",
+    "ci/cd",
+    "actions",
+    "add",
+    "to",
+    "project",
+    "github",
+    "projects"
+  ],
+  "author": "Matthew J. Martin <matthew.mar10@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matmar10/add-issues-to-project/issues"
+  },
+  "homepage": "https://github.com/matmar10/add-issues-to-project#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1",
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^4.2.2",
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^8.13.0",
+    "eslint-plugin-es-beautifier": "^1.0.1",
+    "release-it": "^14.14.2"
+  }
+}

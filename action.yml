@@ -1,0 +1,15 @@
+
+name: add-issues-to-project
+
+description: Automatically add new issues to a project
+
+inputs:
+  gitub_token:
+    description: A Github API access token with access to your repository scoped in as a secret
+    required: true
+  github_project_id:
+    description: The project ID to add new issues to
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
