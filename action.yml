@@ -7,8 +7,8 @@ inputs:
   gitub_token:
     description: A Github API access token with access to your repository scoped in as a secret
     required: true
-  github_project_id:
-    description: The project ID to add new issues to
+  github_project_title:
+    description: Title of the project
     required: true
 runs:
   using: node16

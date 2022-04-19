@@ -7,7 +7,7 @@
     "build": "ncc build index.js",
     "release": "release-it --ci",
     "prerelease": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && act issue.opened -j test-action -e test/issue.json --secret-file .secrets"
   },
   "repository": {
     "type": "git",
