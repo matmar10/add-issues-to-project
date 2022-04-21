@@ -1,6 +1,6 @@
 {
   "name": "add-issues-to-project",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Github action to automatically add all issues to the specified project board.",
   "main": "index.js",
   "scripts": {
