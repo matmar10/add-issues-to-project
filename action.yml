@@ -3,6 +3,10 @@ name: add-issues-to-project
 
 description: Automatically add new issues to a project
 
+branding:
+  icon: truck
+  color: orange
+
 inputs:
   gitub_token:
     description: Github API access token
