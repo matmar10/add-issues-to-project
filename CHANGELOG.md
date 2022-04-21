@@ -1,5 +1,12 @@
 
 
+### [0.1.1](https://github.com/matmar10/add-issues-to-project/compare/0.1.0...0.1.1) (2022-04-21)
+
+
+### Continuous Integration
+
+* add github branding for publish ([98fab82](https://github.com/matmar10/add-issues-to-project/commit/98fab82db898ba67bdc9bfc48ad902baf5f8f77b))
+
 ## 0.1.0 (2022-04-21)
 
 
