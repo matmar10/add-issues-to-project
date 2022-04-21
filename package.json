@@ -39,10 +39,75 @@
     "axios": "^0.26.1"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^4.2.2",
+    "@release-it/conventional-changelog": "^4.3.0",
     "@zeit/ncc": "^0.22.3",
     "eslint": "^8.13.0",
     "eslint-plugin-es-beautifier": "^1.0.1",
     "release-it": "^14.14.2"
+  },
+  "release-it": {
+    "ci": true,
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "perf",
+              "section": "Performance Improvements"
+            },
+            {
+              "type": "revert",
+              "section": "Reverts"
+            },
+            {
+              "type": "docs",
+              "section": "Documentation"
+            },
+            {
+              "type": "style",
+              "section": "Styles"
+            },
+            {
+              "type": "refactor",
+              "section": "Code Refactoring"
+            },
+            {
+              "type": "test",
+              "section": "Tests"
+            },
+            {
+              "type": "build",
+              "section": "Build System"
+            },
+            {
+              "type": "ci",
+              "section": "Continuous Integration"
+            }
+          ]
+        }
+      }
+    },
+    "git": {
+      "commit": true,
+      "tag": true,
+      "push": true,
+      "requireUpstream": false
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    }
   }
 }
